@@ -1,13 +1,12 @@
-\documentclass{article}[12pt]
-%\input{preamble}
-\begin{document}
-\section{Introduction}
+
 \begin{itemize}
 \item SN Cosmology based on maps of Light curve properties to intrinsic luminosities of SN
 \item Usually done by a light curve model with free parameters, determined for SN in question, and a map from these free parameters to brightness  
 \item How to obtain such free parameters of the model given photometric data, and account for uncertainties in these model parameters.
 \end{itemize}
-\section{Question: Does sampling of LC model posteriors improve SNIa cosmology?}
+
+\subsection{Question: Does sampling of LC model posteriors improve SNIa cosmology?}
+
 \begin{itemize}
 \item  This would be obvious if we were using samples to do cosmology. Right
 now we do not do this. Can we say that sampling is a better idea even in the 
@@ -21,7 +20,8 @@ different kinds of data.
 \item The second would happen if the ML procedure gets stuck in local 
 likelihood peaks. 
 \end{itemize}
-\subsection{How do we do try to answer these questions}
+
+\subsubsection{How do we do try to answer these questions}
 \begin{itemize}
 \item Use a simulation, where the input is well described by the model we are 
 using. This means ``no zero point smearing``, no ``intrinsic scatter model`` 
@@ -30,5 +30,6 @@ are good for simulation. Number of SN simulated must be large, because the cases
 \item Repeat with ML estimator.  Find `outliers`. 
 \item Repeat with sampler. Find `outliers`. 
 \end{itemize}
-\section{How good are the samplers we are using?}
-\end{document}
+
+\subsection{How good are the samplers we are using?}
+
