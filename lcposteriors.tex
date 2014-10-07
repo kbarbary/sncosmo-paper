@@ -1,0 +1,35 @@
+
+\begin{itemize}
+\item SN Cosmology based on maps of Light curve properties to intrinsic luminosities of SN
+\item Usually done by a light curve model with free parameters, determined for SN in question, and a map from these free parameters to brightness  
+\item How to obtain such free parameters of the model given photometric data, and account for uncertainties in these model parameters.
+\end{itemize}
+
+\subsection{Question: Does sampling of LC model posteriors improve SNIa cosmology?}
+
+\begin{itemize}
+\item  This would be obvious if we were using samples to do cosmology. Right
+now we do not do this. Can we say that sampling is a better idea even in the 
+absence of a method using full posteriors for cosmology?
+\item We could hope for two things: First, better estimates of errors/covariances. Second, better estimates of reported values.
+\item The first would happen, if, for example, the likelihoods differ from 
+Gaussian likelihoods as we move away from the ML point. The usual ML procedure
+would mis-estimate the errors involved on this. (MINOS probably would not, but
+that is rarely done). So, one could ask how frequently this happens for
+different kinds of data. 
+\item The second would happen if the ML procedure gets stuck in local 
+likelihood peaks. 
+\end{itemize}
+
+\subsubsection{How do we do try to answer these questions}
+\begin{itemize}
+\item Use a simulation, where the input is well described by the model we are 
+using. This means ``no zero point smearing``, no ``intrinsic scatter model`` 
+from SNANA, for a survey. Perhaps allow for floating $z$? Validation of simulations by showing relevant quantities like pulls 
+are good for simulation. Number of SN simulated must be large, because the cases of importance might be rare.
+\item Repeat with ML estimator.  Find `outliers`. 
+\item Repeat with sampler. Find `outliers`. 
+\end{itemize}
+
+\subsection{How good are the samplers we are using?}
+
