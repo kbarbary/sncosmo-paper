@@ -118,33 +118,6 @@
 
 \address[ucb]{Berkeley, CA}
 \begin{abstract}
-%- What is SNCosmo 
-We present SNCosmo, an open source, well-documented Python library under 
-continuous development by users, providing functions for the basic tasks in 
-supernova cosmology ({\color{red}{Should there be any clear definition of the scope/vision 
-for SNCosmo  eg. will not do image reduction?})} 
-%- Who should use it and what can it be used for
-The library is intended to be used by the researcher performing a sequence 
-of tasks in an analysis pipeline combining user-defined-functions with calls to 
-the SNCosmo library functions, as well as by the user who wishes to perform 
-individual tasks. 
-%- Current Features: 
-%* Versatile API for new supernova light curve models, with popular models like 
-% SALT2 (and HSIAO model) implemented as examples 
-%* Implemented models: SALT2, HSIAO
-%* Simulation of data from light curve models
-%* Faciliate exploration of supernova data
-%* Multiple methods of btaining SNIa model parameters from SNIa light curves
-%* Interaction with outputs of other software
-Currently, the library features a versatile API for light curve model with 
-example implementations of the popular SALT2 model, and methods for obtaining 
-parameters of such models from supernova light curves. This allows one to 
-simulate supernova data from survey characteristics, fit simulated or real 
-data to light curve models, and provides an output format and plotting functionality for easy exploration and analysis of data. ({\color{red}{Do we think that it would 
-attract more users if the functionality could be expanded to obtaining cosmology?)}} The library is easy to install, available publicly at github.com/sncosmo/sncosmo and the documentation provides  example How-Tos to achieve a number of tasks. 
-
-In this document, we provide a brief motivation, comparison with existing 
-software. Contributions and suggestions from the user community are welcome ...
 \end{abstract}
 
 
@@ -167,8 +140,9 @@ software. Contributions and suggestions from the user community are welcome ...
 This is the introduction. We haven't cited anything yet, but if we did, we might cite \citet{guy07a} or not \citep{guy05a}.
 
 \section{Light Curve Parameter Posterior Estimation}
+\label{lcposteriors}
 
-%\input{lcposteriors.tex}
+\input{lcposteriors.tex}
 
 %% The Appendices part is started with the command \appendix;
 %% appendix sections are then done as normal sections
