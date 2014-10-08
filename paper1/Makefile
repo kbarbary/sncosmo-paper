@@ -1,4 +1,4 @@
-NAME = main
+NAME = sncosmo
 
 all: ${NAME}.tex ${NAME}.bib
 	latex ${NAME}
