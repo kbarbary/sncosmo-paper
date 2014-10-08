@@ -1,14 +1,18 @@
 sncosmo-paper
 =============
 
-Latex source for sncosmo paper
+Latex source for sncosmo paper(s):
 
-Currently being prepared for submission to _Astronomy & Computing_.
+* `paper1`: General introduction to SNCosmo itself.
+* `paper2`: Light curve parameter posterior sampling (with sncosmo).
 
-Build
------
+Currently being prepared for submission to _Astronomy & Computing_, using
+the Elsevier document class.
 
-Type `make`.
+How to Build
+------------
+
+In subdirectory, type `make`.
 
 To compile the paper, you need the usual latex suite: `latex`,
 `bibtex`, `dvips`, `ps2pdf`. Also, Elsevier's document class,
