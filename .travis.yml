@@ -5,6 +5,7 @@ language: ruby
 addons:
   apt:
     packages:
+    - texlive-generic-recommended
     - texlive-fonts-recommended
     - texlive-latex-extra
     - texlive-latex-recommended
