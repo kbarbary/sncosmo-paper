@@ -1,4 +1,4 @@
-NAME = main
+NAME = sncosmo
 
 all: ${NAME}.tex ${NAME}.bib
 	latex ${NAME}
@@ -12,6 +12,6 @@ all: ${NAME}.tex ${NAME}.bib
 
 	rm -f ${NAME}.aux ${NAME}.blg ${NAME}.log ${NAME}.spl
 	rm -f ${NAME}.dvi ${NAME}.ps
-
+	rm -f ${NAME}Notes.bib
 clean:
 	rm ${NAME}.pdf ${NAME}.bbl

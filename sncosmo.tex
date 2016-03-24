@@ -1,0 +1,98 @@
+\documentclass{emulateapj}
+
+
+% has to be before amssymb it seems
+%\usepackage{color,hyperref}
+%\definecolor{linkcolor}{rgb}{0,0,0.5}
+%\hypersetup{colorlinks=true,linkcolor=linkcolor,citecolor=linkcolor,
+%            filecolor=linkcolor,urlcolor=linkcolor}
+%\usepackage{amssymb,amsmath}
+
+\usepackage{color}
+\usepackage{url}
+\usepackage{graphicx}
+\graphicspath{{figures/}}
+
+% For Python code
+\usepackage{listings}
+\definecolor{lbcolor}{rgb}{0.9,0.9,0.9}
+\lstset{language=Python,
+        basicstyle=\footnotesize\ttfamily,
+        showspaces=false,
+        showstringspaces=false,
+        tabsize=2,
+        breaklines=false,
+        breakatwhitespace=true,
+        identifierstyle=\ttfamily,
+        keywordstyle=\bfseries\color[rgb]{0.133,0.545,0.133},
+        commentstyle=\color[rgb]{0.133,0.545,0.133},
+        stringstyle=\color[rgb]{0.627,0.126,0.941},
+    }
+
+% Draft watermark:
+\usepackage{draftwatermark}
+\SetWatermarkLightness{0.9}
+\SetWatermarkScale{4}
+
+\usepackage[normalem]{ulem}
+\newcommand{\new}[1]{{\color{red} #1}}
+\newcommand{\old}[1]{{\sout{#1}}}
+
+
+\begin{document}
+
+\title{SNCosmo}
+
+\newcommand{\berkeley}{1}
+\newcommand{\uwastro}{2}
+\newcommand{\argonne}{3}
+\author{Kyle Barbary\altaffilmark{\berkeley}}
+\author{Rahul Biswas\altaffilmark{\uwastro}}
+\author{Argonneians\altaffilmark{\argonne}}
+\altaffiltext{\berkeley}{Department of Physics, University of California, Berkeley}
+\altaffiltext{\uwastro}{Department of Astronomy, University of Washington}
+\altaffiltext{\argonne}{Argonne National Laboratory}
+
+
+\begin{abstract}
+We present SNCosmo, an open-source Python library for common analysis
+tasks in supernova cosmology.  The library is intended to be used by
+the researcher performing a sequence of tasks in an analysis pipeline
+combining user-defined-functions with calls to the SNCosmo library, as
+well as by the user who wishes to perform quick
+calculations. Currently, the library features a flexible API for
+supernova light curve models that provides a common interface for
+multiple types of models. Popular Type Ia and core-collapse models
+such as SALT2, Hsiao, and Nugent templates are built in and the system
+is designed to be extended to more complex models with varying numbers
+of parameters.  Functionality in the library allows one to use any
+model to simulate supernova data from survey characteristics, or fit a
+model to simulated or real photometric data using a range of fitting
+functionality.  Also included are convenience functions for input and
+output data formatting and plotting for easy exploration and analysis
+of data. The library is easy to install, publicly available and
+licensed under a liberal BSD-style license. The API is well-documented
+and the online documentation provides examples to achieve a number of
+tasks. SNCosmo is under continuous development by users and
+contributions from the community are welcome.
+\end{abstract}
+
+\keywords{
+    methods: data analysis ---
+    methods: statistical
+}
+
+\section{Introduction}
+\label{introduction}
+
+\input{introduction.tex}
+
+\section{Current Features}
+\label{features}
+
+\input{features.tex}
+
+\bibliographystyle{apj}
+\bibliography{sncosmo}
+
+\end{document}
